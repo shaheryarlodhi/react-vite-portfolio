@@ -42,40 +42,35 @@
 :root {
   --radius: 0.9rem;
 
-  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
-  --font-body: "Manrope", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Space Grotesk", ui-sans-serif, monospace;
 
-  --background: oklch(0.16 0.008 160);
-  --foreground: oklch(0.96 0.006 160);
-  --surface: oklch(0.2 0.009 160);
-  --surface-2: oklch(0.24 0.011 160);
-  --card: oklch(0.2 0.009 160);
-  --card-foreground: oklch(0.96 0.006 160);
-  --popover: oklch(0.2 0.009 160);
-  --popover-foreground: oklch(0.96 0.006 160);
-  --primary: oklch(0.78 0.15 158);
-  --primary-foreground: oklch(0.18 0.02 160);
-  --glow: oklch(0.86 0.14 145);
-  --secondary: oklch(0.26 0.012 160);
-  --secondary-foreground: oklch(0.96 0.006 160);
-  --muted: oklch(0.26 0.012 160);
-  --muted-foreground: oklch(0.72 0.012 160);
-  --accent: oklch(0.3 0.03 160);
-  --accent-foreground: oklch(0.96 0.006 160);
+  --background: oklch(0.12 0.008 185);
+  --foreground: oklch(0.97 0.005 160);
+  --surface: oklch(0.19 0.014 190);
+  --surface-2: oklch(0.23 0.018 190);
+  --card: oklch(0.19 0.014 190);
+  --card-foreground: oklch(0.97 0.005 160);
+  --popover: oklch(0.19 0.014 190);
+  --popover-foreground: oklch(0.97 0.005 160);
+  --primary: oklch(0.85 0.2 161);
+  --primary-foreground: oklch(0.14 0.02 180);
+  --glow: oklch(0.86 0.16 212);
+  --secondary: oklch(0.23 0.018 190);
+  --secondary-foreground: oklch(0.97 0.005 160);
+  --muted: oklch(0.24 0.02 190);
+  --muted-foreground: oklch(0.68 0.03 164);
+  --accent: oklch(0.3 0.04 180);
+  --accent-foreground: oklch(0.97 0.005 160);
   --destructive: oklch(0.62 0.2 25);
   --destructive-foreground: oklch(0.98 0.005 160);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 14%);
-  --ring: oklch(0.78 0.15 158 / 60%);
+  --ring: oklch(0.85 0.2 161 / 60%);
 
   --gradient-warm: linear-gradient(135deg, var(--primary), var(--glow));
-  --gradient-text: linear-gradient(
-    100deg,
-    oklch(0.98 0.005 160) 0%,
-    oklch(0.86 0.14 145) 55%,
-    oklch(0.68 0.14 168) 100%
-  );
+  --gradient-text: linear-gradient(90deg, var(--primary), var(--glow));
   --shadow-elegant: 0 30px 80px -30px oklch(0 0 0 / 0.7);
   --shadow-glow: 0 0 60px -10px color-mix(in oklab, var(--primary) 45%, transparent);
   --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);

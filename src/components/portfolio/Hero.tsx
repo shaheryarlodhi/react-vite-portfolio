@@ -4,7 +4,7 @@ import { ArrowUpRight, Mail } from "lucide-react";
 import portrait from "@/assets/portrait.jpg";
 import { Magnetic } from "./Magnetic";
 
-const BADGE_TEXT = "DESIGNER · GOHIGHLEVEL EXPERT · ";
+const BADGE_TEXT = "GOHIGHLEVEL EXPERT · FUNNEL BUILDER · ";
 
 export function Hero() {
   const reduce = useReducedMotion();
@@ -38,26 +38,40 @@ export function Hero() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_10%,transparent_25%,var(--background)_78%)]" />
       </div>
 
-      <div className="relative mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-4">
+      <div className="relative mx-auto grid max-w-6xl grid-cols-1 items-center gap-14 px-6 lg:grid-cols-2 lg:gap-8">
         <motion.div
           style={{ x: px, y: py }}
           initial={{ opacity: 0, scale: 0.96, filter: "blur(20px)" }}
           animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
           transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-          className="relative order-2 mx-auto w-full max-w-md lg:order-1"
+          className="relative order-2 mx-auto w-full max-w-md lg:order-2"
         >
-          <img
-            src={portrait}
-            alt="Portrait of Fakharullah, Designer and GoHighLevel Expert"
-            width={900}
-            height={1100}
-            className="h-full w-full object-cover grayscale [mask-image:radial-gradient(ellipse_at_center,black_38%,transparent_76%)]"
-          />
+          <div className="relative aspect-square w-full overflow-hidden rounded-full">
+            <img
+              src={portrait}
+              alt="Portrait of Fakharullah, Designer and GoHighLevel Expert"
+              width={900}
+              height={1100}
+              className="h-full w-full object-cover grayscale"
+            />
+            <span
+              aria-hidden
+              className="pointer-events-none absolute inset-0 rounded-full border-2 border-primary/60"
+            />
+            <span
+              aria-hidden
+              className="pointer-events-none absolute -inset-3 rounded-full border border-glow/25"
+            />
+          </div>
 
           <div className="absolute -bottom-2 -left-2 h-32 w-32 md:-left-10 md:h-40 md:w-40">
             <span
-              className="absolute inset-0 rounded-full border border-primary/25 bg-[radial-gradient(circle_at_30%_25%,color-mix(in_oklab,var(--primary)_28%,transparent),transparent_70%)] backdrop-blur-md"
+              className="absolute inset-0 overflow-hidden rounded-full border border-white/20 bg-[radial-gradient(circle_at_30%_25%,color-mix(in_oklab,var(--primary)_28%,transparent),transparent_70%)] backdrop-blur-md"
               aria-hidden
+            />
+            <span
+              aria-hidden
+              className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 rounded-full bg-glow/40 blur-2xl"
             />
             <svg
               viewBox="0 0 100 100"
@@ -82,7 +96,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="font-mono text-xs font-semibold uppercase tracking-[0.28em] text-primary"
+            className="text-gradient text-sm font-medium uppercase tracking-[0.18em]"
           >
             Designer &amp; GoHighLevel Expert
           </motion.p>
@@ -119,10 +133,10 @@ export function Hero() {
           >
             <Magnetic
               href="#work"
-              className="group items-center gap-4 rounded-full bg-[image:var(--gradient-warm)] py-2.5 pl-7 pr-2.5 text-sm font-semibold text-primary-foreground shadow-glow"
+              className="group items-center gap-4 rounded-full border border-white/10 bg-[linear-gradient(98deg,rgba(2,176,155,0.38),rgba(90,137,253,0.18))] py-2.5 pl-7 pr-2.5 text-sm font-semibold text-[#c6ffec] transition-shadow duration-300 hover:shadow-[0_20px_40px_rgba(45,181,134,0.25)]"
             >
               Happy to chat on Whatsapp
-              <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-primary-foreground/20 transition-transform duration-300 group-hover:rotate-45">
+              <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-primary text-primary-foreground transition-transform duration-300 group-hover:rotate-45">
                 <ArrowUpRight size={18} />
               </span>
             </Magnetic>
